@@ -112,11 +112,11 @@
 
 @section('add_js')
 <!-- Flot Charts JavaScript -->
-<script src="../vendor/flot/excanvas.min.js"></script>
-<script src="../vendor/flot/jquery.flot.js"></script>
-<script src="../vendor/flot/jquery.flot.pie.js"></script>
-<script src="../vendor/flot/jquery.flot.resize.js"></script>
-<script src="../vendor/flot/jquery.flot.time.js"></script>
-<script src="../vendor/flot-tooltip/jquery.flot.tooltip.min.js"></script>
-<script src="../data/flot-data.js"></script>
+<script src="{{asset('vendor/flot/excanvas.min.js')}}"></script>
+<script src="{{asset('vendor/flot/jquery.flot.js')}}"></script>
+<script src="{{asset('vendor/flot/jquery.flot.pie.js')}}"></script>
+<script src="{{asset('vendor/flot/jquery.flot.resize.js')}}"></script>
+<script src="{{asset('vendor/flot/jquery.flot.time.js')}}"></script>
+<script src="{{asset('vendor/flot-tooltip/jquery.flot.tooltip.min.js')}}"></script>
+<script src="{{asset('data/flot-data.js')}}"></script>
 @endsection

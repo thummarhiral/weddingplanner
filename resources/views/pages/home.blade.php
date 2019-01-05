@@ -543,7 +543,7 @@
 
 @section('add_js')
 <!-- Morris Charts JavaScript -->
-<script src="../vendor/raphael/raphael.min.js"></script>
-<script src="../vendor/morrisjs/morris.min.js"></script>
-<script src="../data/morris-data.js"></script>
+<script src="{{asset('vendor/raphael/raphael.min.js')}}"></script>
+<script src="{{asset('vendor/morrisjs/morris.min.js')}}"></script>
+<script src="{{asset('data/morris-data.js')}}"></script>
 @endsection

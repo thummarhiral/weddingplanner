@@ -19,3 +19,20 @@ Route::get('/', function () {
 Route::get('flot', function () {
     return view('pages.flot');
 });
+
+Route::get('buttons', function () {
+    return view('pages.buttons');
+});
+
+Route::get('tables', function () {
+	return view('pages.tables');
+});
+
+// Route::get('login',function(){
+// 	return view('pages.login');
+// });
+
+//Routes::get('maigrat',)
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
