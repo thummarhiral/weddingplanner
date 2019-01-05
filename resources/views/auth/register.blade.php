@@ -37,6 +37,19 @@
                                 @endif
                             </div>
                         </div>
+                          <div class="form-group row">
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Address') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="email" type="text" class="form-control{{ $errors->has('Address') ? ' is-invalid' : '' }}" name="Address" value="{{ old('Address') }}" required>
+                                @if ($errors->has('Address'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('Address') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
@@ -46,6 +59,20 @@
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                          <div class="form-group row">
+                            <label for="pincode" class="col-md-4 col-form-label text-md-right">{{ __('Pincode') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="pincode" type="text" class="form-control{{ $errors->has('pincode') ? ' is-invalid' : '' }}" name="epincode" value="{{ old('pincode') }}" required>
+
+                                @if ($errors->has('pincode'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('pincode') }}</strong>
                                     </span>
                                 @endif
                             </div>
