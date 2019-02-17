@@ -13,26 +13,61 @@
 
 Route::get('/', function () {
     //return view('welcome');
-    return view('pages.home');
+    return view('front.home');
 });
 
-Route::get('flot', function () {
-    return view('pages.flot');
+Route::get('about-us', function () {
+    //return view('welcome');
+    return view('front.aboutus');
+});
+Route::get('services', function () {
+    //return view('welcome');
+    return view('front.services');
 });
 
-Route::get('buttons', function () {
-    return view('pages.buttons');
+Route::get('gallery', function () {
+    //return view('welcome');
+    return view('front.gallery');
 });
 
-Route::get('tables', function () {
-	return view('pages.tables');
+Route::get('events', function () {
+    //return view('welcome');
+    return view('front.events');
 });
+
+Route::get('contact-us', function () {
+    //return view('welcome');
+    return view('front.contactus');
+});
+
 
 // Route::get('login',function(){
 // 	return view('pages.login');
 // });
 
 //Routes::get('maigrat',)
+Route::get('profile/{id}','hiralcontroller@showhiral')->name('profile');
+Route::get('hirals','hiralcontroller@index')->name('hirals');
+
+Route::group(['prefix' => 'admin','middleware' => 'auth'], function () {
+    Route::get('/', function () {
+        // Matches The "/admin/users" URL
+        return view('pages.home');
+    });
+
+	Route::get('flot', function () {
+	    return view('pages.flot');
+	});
+
+	Route::get('buttons', function () {
+	    return view('pages.buttons');
+	});
+
+	Route::get('tables', function () {
+		return view('pages.tables');
+	});
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

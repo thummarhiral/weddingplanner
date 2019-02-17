@@ -5,7 +5,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+    <a class="navbar-brand" href="{{ url('admin/dashboard') }}">SB Admin v2.0</a>
 </div>
 <!-- /.navbar-header -->
 
@@ -216,4 +216,4 @@
         <!-- /.dropdown-user -->
     </li>
     <!-- /.dropdown -->
-</ul>
+</ul>s
