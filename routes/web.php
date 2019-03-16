@@ -49,11 +49,13 @@ Route::get('contact-us', function () {
 Route::get('profile/{id}','hiralcontroller@showhiral')->name('profile');
 Route::get('hirals','hiralcontroller@index')->name('hirals');
 
-Route::group(['prefix' => 'admin','middleware' => 'auth'], function () {
+Route::group(['prefix' => 'admin','middleware' => 'is_admin'], function () {
     Route::get('/', function () {
         // Matches The "/admin/users" URL
         return view('pages.home');
     });
+
+    Route::resource('users', 'Admin\UserController');
 
 	Route::get('flot', function () {
 	    return view('pages.flot');

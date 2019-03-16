@@ -1,5 +1,5 @@
 <!-- subscribe -->
-<section class="subscribe text-center bg-light py-5">
+<!-- <section class="subscribe text-center bg-light py-5">
 	<div class="container p-sm-3">
 		<h3 class="heading mb-2"> Subscribe Newsletter </h3>
 		<p class="mb-5">Signup and recieve 15% on your First Plan.</p>
@@ -10,5 +10,5 @@
 			</button>
 		</form>
 	</div>
-</section>
+</section> -->
 <!-- //subscribe -->

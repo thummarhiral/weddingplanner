@@ -10,7 +10,7 @@
 						Your wedding adventure starts here
 					</h3>
 				</div>
-				<a href="contact.html"> Plan Your Wedding</a>
+				<a href="{{ url('contact-us') }}"> Plan Your Wedding</a>
 			</div>
 			<!-- To bottom button-->
 			<div class="thim-click-to-bottom">
@@ -34,29 +34,36 @@
 		<div class="row welcome-grids">
 			<div class="col-lg-4 mb-lg-0 mb-5">
 				<h4 class="left-heading">Our Weddings Story</h4>
-				<p class="mb-3">Sed gravida dignissim magna idesn molestie. Nulla congue, ex init dictum lacinia, nisl est posuere nulla, nec eges tas leo mi id lorem. Maecenas sem nulla ex init dictu lacinia, Maecenas sem nulla. Sed gravida dignissim magna idesn en molestie</p>
+				<p class="mb-3">Imagine waking up to a job that lifts you up and transports you to a different world. A world populated with a billion heartfelt feelings and stories etched ceremoniously in magic, love and joie de vivre. Perfect with its Disney like happy endings, sworn vows and the promises of forever. This is their world. The TWS World. The Wedding Story is a Mumbai based photography team.</p>
+                 
+                
+                <p class="mb-3"> They document handpicked elements and moments that are packed with love, to render your wedding film as illustrious as a contemporary cinematic record. The footage is edited meticulously to provide you with an everlasting treasured testament of your dream story. They believe that marriages are a promise of forever, synonymous to "...and they lived happily ever after." We are here to encapsulate your "happily ever after" and to whittle a truncated version into 24fps a little more magically than you ever imagined. TWS, for images you will want to share and for images you will want to treasure!</p>
 				<div class="welcome-button mt-4">
-					<a href="about.html">Read More</a>
+					<a href="{{ url('about-us') }}">Read More</a>
 				</div>
 			</div>
 			<div class="col-lg-4 col-sm-6">
 				<div class="image1 mb-4">
 				<h4>Hair / Makeup</h4>
-					<p class="mt-3">Sed gravida dignissim magna idesn en molestie. Nulla congue, ex init dictu lacinia, Maecenas sem nulla</P>
+					<p class="mt-3">The Makeup Collective, set-up by award-winning artist Jasmine Ringo, is an elite hair and makeup service based in Atlanta, Georgia. It provides an extensive array of styles for brides of all tones and skin types in the US and globally. Getting makeup-ready for the wedding day can be stressful </P>
 				</div>
 				<div class="image1">
 				<h4>Venue & Catering</h4>
-					<p class="mt-3">Sed gravida dignissim magna idesn en molestie. Nulla congue, ex init dictu lacinia, Maecenas sem nulla</P>
+					<p class="mt-3"> Couples who prefer an intimate wedding with a close-knit group of friends, held at informal venues such as a backyard, garden, or barn.
+					Food preparation, event schedule to keep the wedding enjoyable, and a comfortable space.</P>
 				</div>
 			</div>
 			<div class="col-lg-4 col-sm-6 mt-sm-0 mt-4">
 				<div class="image1 mb-4">
 				<h4>Photo / Video </h4>
-					<p class="mt-3">Sed gravida dignissim magna idesn en molestie. Nulla congue, ex init dictu lacinia, Maecenas sem nulla</P>
+					<p class="mt-3">Tired of hanging your wedding photos in basic frames? We’ve compiled some creative ways to cherish your photos, and significant other, for a lifetime.
+					Formal poses can be wonderful, but a little imagination will take your engagement photos to the next level. Be inspired by these innovative photo shoots.</P>
 				</div>
 				<div class="image1">
 				<h4>Flowers & Music</h4>
-					<p class="mt-3">Sed gravida dignissim magna idesn en molestie. Nulla congue, ex init dictu lacinia, Maecenas sem nulla</P>
+					<p class="mt-3">Browse the most beautiful wedding flowers to get inspired for your own big day. We have the best ideas for your wedding bouquet, corsages, boutonnieres.
+						
+					Find the latest Wedding Music articles, see the gorgeous pictures and get wedding ideas from the top wedding authority, all on Brides.</P>
 				</div>
 			</div>
 		</div>
@@ -100,195 +107,35 @@
 				<div class="service-grid1">
 					<span class="fa fa-globe"></span>
 					<h4 class="my-3">Weddings</h4>
-					<p>Aenean tristique, duiid sedet blandit elt ultricies, ligula elit interd ures turpis, at bibendum lib dolor.</p>
+					<p>Now your budget is in the bag, you know what you’ve got to spend on your ceremony and reception space. It’s time to get.</p>
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-6 mt-sm-0 mt-sm-4 mt-4" >
 				<div class="service-grid1">
 					<span class="fa fa-book"></span>
 					<h4 class="my-3">Parties</h4>
-					<p>Aenean tristique, duiid sedet blandit elt ultricies, ligula elit interd ures turpis, at bibendum lib dolor.</p>				
+					<p>A party is a gathering of people who have been invited by a host for the purposes of socializing, ... Contents. 1 Description; 2 Types of parties. 2.1 Birthday party; 2.2 Surprise party; 2.3 Dinner party; 2.4 Garden party; 2.5 Cocktail party; 2.6 Tea .</p>				
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-6 mt-lg-0 mt-sm-4 mt-4">
 				<div class="service-grid1">
 					<span class="fa fa-diamond"></span>
 					<h4 class="my-3">Entertainment</h4>
-					<p>Aenean tristique, duiid sedet blandit elt ultricies, ligula elit interd ures turpis, at bibendum lib dolor.</p>
+					<p> Entertaining Your Wedding Guests: 36 Awesome Ideas They'll Love. Magicians. There are few things more entertaining than magic. Caricaturist. Give guests a wonderful keepsake of your wedding by hiring a caricaturist. Fire Performers. Bouncy Castles. Retro Arcade. Photo Booths. Magic Mirror Photo Booths. Singing Waiters.</p>
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-6 mt-lg-0 mt-sm-4 mt-4">
 				<div class="service-grid1">
 					<span class="fa fa-book"></span>
 					<h4 class="my-3">Celebrations</h4>
-					<p>Aenean tristique, duiid sedet blandit elt ultricies, ligula elit interd ures turpis, at bibendum lib dolor.</p>				
+					<p>Every anniversary is a milestone. Wedding anniversaries are celebrated in many different ways. People around the world find that doing something special on .</p>				
 				</div>
 			</div>
 			<div class="ser-button mt-4">
-				<a href="services.html">Explore all services</a>
+				<a href="{{ url('services') }}">Explore all services</a>
 			</div>
 		</div>
 	</div>
 </section>
 <!-- //services -->
-
-<!-- wedding date -->
-<section class="section my-lg-5 py-5">
-	<div class="container py-md-5">
-		<h3 class="heading wedding text-light mb-2 text-center">Our Next Wedding Organizer Is On</h3>
-		<p class="countdown-text mx-auto text-center text-light mb-lg-5 mb-4">Aenean tristique, duiid sedet blandit elt ultricies, ligula elit interd ures turpis, at bibendum lib sed ipsum dolor.</p>	
-		<div class="row">
-			<div class="col-lg-7 mx-auto">
-				<!--date-->
-				<div class="examples text-center">
-					<h4>21 Dec, 2018.</h4>
-					<p>Venue : 2466H 5th Street Parking, King Block, New York City.</p>
-				</div>
-				<!--//date-->
-			</div>
-			<div class="position-img1">
-				<img src="images/right.jpg" alt="" class="img-fluid"/>
-			</div>
-			<div class="position-img2">
-				<img src="images/left.jpg" alt="" class="img-fluid"/>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- //wedding date -->
-
-<!-- team -->
-<div class="team py-5">
-	<div class="container py-md-5">
-	<h3 class="heading text-capitalize mb-lg-5 mb-4"> We are committed to service excellence </h3>
-		<div class="row agile-team-grids">
-			
-			<div class="px-1 agileits-team-grid">
-				<div class="team-info">
-					<img src="images/t1.jpg" alt="" />
-					<div class="team-caption"> 
-						<h4>Jaye Smith</h4>
-						<p>Wedding Planner</p>
-						<ul>
-							<li><a href="#"><span class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><span class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><span class="fa fa-linkedin"></i></a></li>
-							<li><a href="#"><span class="fa fa-rss"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<h4 class="text mt-3">Get To Know Her</h4>
-				<p class="text">Sed lorem ipsumet </p>
-			</div>
-			
-			<div class=" px-1 agileits-team-grid">
-				<div class="team-info">
-					<img src="images/t2.jpg" alt="" />
-					<div class="team-caption"> 
-						<h4>Mike Arney</h4>
-						<p>Wedding Planner</p>
-						<ul>
-							<li><a href="#"><span class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><span class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><span class="fa fa-linkedin"></i></a></li>
-							<li><a href="#"><span class="fa fa-rss"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<h4 class="text mt-3">Get To Know Him</h4>
-				<p class="text">Sed lorem ipsumet </p>
-			</div>
-			
-			<div class="px-1 agileits-team-grid margin-team">
-				<div class="team-info">
-					<img src="images/t3.jpg" alt="" />
-					<div class="team-caption"> 
-						<h4>Mary Jane</h4>
-						<p>Wedding Organizer</p>
-						<ul>
-							<li><a href="#"><span class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><span class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><span class="fa fa-linkedin"></i></a></li>
-							<li><a href="#"><span class="fa fa-rss"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<h4 class="text mt-3">Get To Know Her</h4>
-				<p class="text">Sed lorem ipsumet </p>
-			</div>
-			
-			<div class=" px-1 agileits-team-grid mt-lg-0 mt-5">
-				<div class="team-info">
-					<img src="images/t4.jpg" alt="" />
-					<div class="team-caption"> 
-						<h4>Louis Edward</h4>
-						<p>Wedding Organizer</p>
-						<ul>
-							<li><a href="#"><span class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><span class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><span class="fa fa-linkedin"></i></a></li>
-							<li><a href="#"><span class="fa fa-rss"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<h4 class="text mt-3">Get To Know Him</h4>
-				<p class="text">Sed lorem ipsumet </p>
-			</div>
-			<div class=" px-1 agileits-team-grid mt-lg-0 mt-5">
-				<div class="team-info">
-					<img src="images/t5.jpg" alt="" />
-					<div class="team-caption"> 
-						<h4>Johnson</h4>
-						<p>Wedding Organizer</p>
-						<ul>
-							<li><a href="#"><span class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><span class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><span class="fa fa-linkedin"></i></a></li>
-							<li><a href="#"><span class="fa fa-rss"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<h4 class="text mt-3">Get To Know Him</h4>
-				<p class="text">Sed lorem ipsumet </p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- //team -->
-
-<!-- Clients -->
-<section class="clients-main">
-	<div class="wthree-different-dot1 py-5">
-		<div class="container py-sm-3">
-			<h3 class="heading text-capitalize text-center mb-sm-5 mb-4"> What They Say </h3>
-			<div class="row cli-ent">
-				<div class="col-lg-4 col-md-6 item g1">
-					<div class="row agile-dish-caption">
-						<div class="col-lg-11 text-center mx-auto">
-							<h5>Michael Johnson</h5>
-							<p class="para-w3-agile"> Phasellus iaculis sapien in tellus gravida, a placerat lacus elementum. Nulla vitae lac nec elit mollis pretium. Sed sed nunc lectus sapien in tellus.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 item g1">
-					<div class="row agile-dish-caption">
-						<div class="col-lg-11 text-center mx-auto">
-							<h5>Mary elizabeth</h5>
-							<p class="para-w3-agile"> Phasellus iaculis sapien in tellus gravida, a placerat lacus elementum. Nulla vitae lac nec elit mollis pretium. Sed sed nunc lectus sapien in tellus.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 item g1">
-					<div class="row agile-dish-caption">
-						<div class="col-lg-11 text-center mx-auto">
-							<h5>Elisa kour</h5>
-							<p class="para-w3-agile"> Phasellus iaculis sapien in tellus gravida, a placerat lacus elementum. Nulla vitae lac nec elit mollis pretium. Sed sed nunc lectus sapien in tellus.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--// Clients -->
 @endsection

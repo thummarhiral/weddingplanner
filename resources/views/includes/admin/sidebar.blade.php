@@ -13,7 +13,7 @@
                 <!-- /input-group -->
             </li>
             <li>
-                <a href="{{url('index.html')}}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                <a href="{{url('index')}}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
             </li>
             <li>
                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
@@ -22,7 +22,7 @@
                         <a href="{{ url('flot') }}">Flot Charts</a>
                     </li>
                     <li>
-                <a href="{{url('morris.html')}}"><i class="fa fa-table fa-fw"></i> Tables</a>
+                <a href="{{url('morris.')}}"><i class="fa fa-table fa-fw"></i> Tables</a>
         
                     </li>
                 </ul>
@@ -32,28 +32,28 @@
                 <a href="{{ url('tables') }}"><i class="fa fa-table fa-fw"></i> Tables</a>
             </li>
             <li>
-                <a href="{{url('forms.html')}}"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                <a href="{{url('forms')}}"><i class="fa fa-edit fa-fw"></i> Forms</a>
             </li>
             <li>
                 <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="{{url('panels-wells.html')}}">Panels and Wells</a>
+                        <a href="{{url('panels-wells')}}">Panels and Wells</a>
                     </li>
                     <li>
                         <a href="{{ url('buttons') }}">Buttons</a>
                     </li>
                     <li>
-                        <a href="{{url('notifications.html')}}">Notifications</a>
+                        <a href="{{url('notifications')}}">Notifications</a>
                     </li>
                     <li>
-                        <a href="{{url('typography.html')}}">Typography</a>
+                        <a href="{{url('typography')}}">Typography</a>
                     </li>
                     <li>
-                        <a href="{{url('icons.html')}}"> Icons</a>
+                        <a href="{{url('icons')}}"> Icons</a>
                     </li>
                     <li>
-                        <a href="{{url('grid.html')}}">Grid</a>
+                        <a href="{{url('grid')}}">Grid</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->
@@ -92,10 +92,10 @@
                 <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="{{url('blank.html')}}">Blank Page</a>
+                        <a href="{{url('blank')}}">Blank Page</a>
                     </li>
                     <li>
-                        <a href="{{url('login.html')}}">Login Page</a>
+                        <a href="{{url('login')}}">Login Page</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->

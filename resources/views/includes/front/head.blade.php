@@ -1,4 +1,4 @@
-<title>Wedding Planner - @yield('title', 'Home')</title>	
+<title>Royal Ceremony Planner - @yield('title', 'Home')</title>	
 <!-- Meta tag Keywords -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">

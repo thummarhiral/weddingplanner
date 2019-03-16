@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @include('includes.head')
+    @include('includes.admin.head')
 </head>
 <body>
     <div id="wrapper">
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-            @include('includes.header');
+            @include('includes.admin.header')
             <!-- /.navbar-top-links -->
 
-            @include('includes.sidebar');
+            @include('includes.admin.sidebar')
             <!-- /.navbar-static-side -->
         </nav>
         <div id="page-wrapper">
