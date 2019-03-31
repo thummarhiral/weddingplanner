@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Create User')
+@section('title', 'Edit User')
 
 @section('content')
 <div class="row">
@@ -12,69 +12,79 @@
     <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Create User
+                Edit User
             </div>
             <div class="panel-body">
                 <div class="row">
+            		@if ($errors->any())
+				      	<div class="alert alert-danger">
+				        	<ul>
+				            	@foreach ($errors->all() as $error)
+				              	<li>{{ $error }}</li>
+				            	@endforeach
+				        	</ul>
+				      	</div><br />
+				    @endif
                     <div class="col-lg-6">
-                        <form role="form" method="POST" action="{{ route('users.store') }}">
-                            @csrf
-                        	
+                        <form role="form" method="POST" action="{{ route('users.update', $user->id) }}">
+                        	@method('PATCH')
+        					@csrf
         					<div class="form-group row">
         						<div class="form-group">
                                 <label>First_Name:</label>
-                                <input class="form-control" type="text" placeholder="Enter text" name="first_name"/>
+                                <input class="form-control" type="text" placeholder="Enter text" name="first_name" value="{{ $user->first_name }}" />
                            
                             </div>
 
                             <div class="form-group">
                                 <label>Last_Name:</label>
-                                <input class="form-control" type="text" placeholder="Enter text"  name="last_name">
+                                <input class="form-control" type="text" placeholder="Enter text"  name="last_name"value="{{ $user->last_name }}">
                             </div>
                             <div class="form-group">
                                 <label>Address:</label>
-                                <textarea class="form-control" rows="3" name="address"></textarea>
+                                <textarea class="form-control" rows="3" name="address"value="{{ $user->address}}"></textarea>
                             </div>
                             <div class="form-group">
                                 <label>City:</label>
-                                <label><input type="text" name="city"></label>
+                                <label><input type="text" name="city"value="{{ $user->city }}"></label>
                                 </div>
                                 <div class="form-group">
                                 <label>Pincode:</label>
-                                <label><input type="number" name="pincode"></label>
+                                <label><input type="number" name="pincode"value="{{ $user->pincode }}"></label>
                                 </div>
                                 <div class="form-group">
                                 <label>state:</label>
-                                <label><input type="text" name="state"></label>
+                                <label><input type="text" name="state"value="{{ $user->state }}"></label>
                                 </div> 
                                 <div class="form-group">
                                 <label>email:</label>
-                                <label><input type="email" name="email"></label>
+                                <label><input type="email" name="email"value="{{ $user->email }}"></label>
                                 </div>  
                             <div class="form-group">
                             	<div class="form-group">
                                 <label>Password:</label>
-                                <label><input type="Password" name="password"></label>
+                                <label><input type="password" name="password"value="{{ $user->password }}"></label>
                                 </div>
+                                
+                            </div>
                                 
                             </div>
                             <div class="form-group">
                                 <label>Gender: </label>
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" value="m" name="gender">Male
+                                        <input type="radio" value="m" name="gender" {{ $user->gender=="m"?'checked':'' }}>Male
                                     </label>
                                 </div>
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" value="f" name="gender">Female
+                                        <input type="radio" value="f" name="gender" {{ $user->gender=="f"?'checked':'' }}>Female
                                     </label>
                                 </div>
                                
                             </div>
-
-                            <button type="submit" class="btn btn-default">Save User</button>
-                            <button type="reset" class="btn btn-default">Reset</button>
+                            <button type="submit" class="btn btn-default">Submit Button</button>
+                            <button type="reset" class="btn btn-default">Reset Button</button>
                         </form>
                     </div>
                     <!-- /.col-lg-6 (nested) -->

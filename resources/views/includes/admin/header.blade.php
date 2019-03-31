@@ -5,7 +5,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="{{ url('admin/dashboard') }}">SB Admin v2.0</a>
+    <a class="navbar-brand" href="{{ url('admin/dashboard') }}">{{ config('app.name', 'Laravel') }}</a>
 </div>
 <!-- /.navbar-header -->
 
@@ -210,7 +210,17 @@
             <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
             </li>
             <li class="divider"></li>
-            <li><a href="{{ url('login') }}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+            <li>
+                <a href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                                     <i class="fa fa-sign-out fa-fw"></i> 
+                    {{ __('Logout') }}
+                </a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
             </li>
         </ul>
         <!-- /.dropdown-user -->

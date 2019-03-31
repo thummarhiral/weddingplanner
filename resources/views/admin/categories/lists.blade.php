@@ -22,27 +22,24 @@
 	                    <thead>
 	                        <tr>
 	                            <th>#</th>
-	                            <th>First Name</th>
-	                            <th>Last Name</th>
-	                            <th>Address</th>
-	                            <th>Email</th>
-	                            <th>Pincode</th>
+	                            <th>Name</th>
+	                            <th>Description</th>
+	                            <th>Image_Name</th>
 	                            <th>Status</th>
 	                            <th>Actions</th>
 	                        </tr>
 	                    </thead>
 	                    <tbody>
-	                    	@forelse ($users as $user)
+	                    	@forelse ($categories as $category)
 	                    		<tr>
-		                            <td>{{ $user->id }}</td>
-		                            <td>{{ $user->first_name }}</td>
-		                            <td>{{ $user->last_name }}</td>
-		                            <td>{{ $user->address }}</td>
-		                            <td>{{ $user->email  }}</td> 
-		                            <td>{{ $user->pincode }}</td>
-		                            <td>{{ $user->status=="1"?'Active':'Inactive' }}</td>
-		                            <td><a href="{{ url('admin/users/'.$user->id.'/edit') }}">Edit</a></td>
-		                            <td><form action="{{ url('admin/users/'.$user->id.'') }}" method="post">
+		                            <td>{{ $categories->id }}</td>
+		                            <td>{{ $categories->name }}</td>
+		                            <td>{{ $categories->description }}</td>
+		                            <td>{{ $categories->image_name }}</td>
+		                            
+		                            <td>{{ $category->status=="1"?'Active':'Inactive' }}</td>
+		                            <td><a href="{{ url('admin/categories/'.$category->id.'/edit') }}">Edit</a></td>
+		                            <td><form action="{{ url('admin/categories/'.$category->id.'') }}" method="post">
           									@csrf
 	                                        @method('DELETE')
 	                                        <button class="btn btn-danger" type="submit">Delete</button>

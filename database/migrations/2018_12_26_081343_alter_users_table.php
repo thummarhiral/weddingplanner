@@ -15,14 +15,13 @@ class AlterUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->dropColumn('name');
-         $table->string('first_name')->after('id');
-         $table->string('last_name')->after('first_name');
-         $table->string('Address')->after('last_name')->nullable();
-         $table->string('pincode')->after('email_verified_at')->nullable();
-         $table->integer('state_id')->after('pincode')->default('0');
-            $table->boolean('status')->after('state_id')->default('0');
-            $table->integer('security_question_id')->after('status')->nullable();
-            $table->integer('answer_id')->after('security_question_id')->nullable();
+            $table->string('first_name')->after('id');
+            $table->string('last_name')->after('first_name');
+            $table->string('address')->after('last_name')->nullable();
+            $table->string('city')->after('email_verified_at')->nullable();
+            $table->string('state')->after('city')->nullable();
+            $table->string('pincode')->after('state')->nullable();
+            $table->boolean('status')->after('pincode')->default('0');
         });
     }
 
@@ -34,7 +33,7 @@ class AlterUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn(['first_name','last_name','pincode','state_id','status','security_question_id','answer_id']);
+            $table->dropColumn(['first_name','last_name','address','pincode','state_id','status']);
         });
     }
 }

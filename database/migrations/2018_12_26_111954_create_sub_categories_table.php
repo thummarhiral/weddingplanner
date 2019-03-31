@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateEventMasterTable extends Migration
+class CreateSubCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class CreateEventMasterTable extends Migration
      */
     public function up()
     {
-        Schema::create('event_master', function (Blueprint $table) {
+        Schema::create('sub_categories', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('category_id')->default(0);
             $table->string('name');
-            $table->date('from_date');
-            $table->date('to_date');
-            $table->time('from_time');
-            $table->time('to_time');
+            $table->string('description');
+            $table->string('image_name');
             $table->boolean('status');
             $table->timestamps();
         });
@@ -32,6 +31,6 @@ class CreateEventMasterTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('event_master');
+        Schema::dropIfExists('sub_categories');
     }
 }

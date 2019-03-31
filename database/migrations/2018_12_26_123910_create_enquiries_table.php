@@ -16,9 +16,8 @@ class CreateEnquiriesTable extends Migration
         Schema::create('enquiries', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('city');
             $table->string('email');
-            $table->string('contect');
+            $table->string('phone');
             $table->mediumtext('message');
             $table->timestamps();
         });

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AlterPostTable extends Migration
+class AddGenderToUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class AlterPostTable extends Migration
      */
     public function up()
     {
-        Schema::table('post', function (Blueprint $table) {
+        //
+        Schema::table('users', function (Blueprint $table) {
             //
-            $table->integer('category_id')->after('id');
+            $table->enum('gender',['m','f'])
+            ->after('last_name')->nullable();
         });
     }
 
@@ -26,9 +28,10 @@ class AlterPostTable extends Migration
      */
     public function down()
     {
-        Schema::table('post', function (Blueprint $table) {
+        //
+        Schema::table('users', function (Blueprint $table) {
             //
-            $table->dropColumn('category_id');
+            $table->dropColumn('gender');
         });
     }
 }

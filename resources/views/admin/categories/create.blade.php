@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Create User')
+@section('title', 'Create Category')
 
 @section('content')
 <div class="row">
@@ -12,7 +12,7 @@
     <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Create User
+                Create Category
             </div>
             <div class="panel-body">
                 <div class="row">
@@ -22,22 +22,20 @@
                         	
         					<div class="form-group row">
         						<div class="form-group">
-                                <label>First_Name:</label>
-                                <input class="form-control" type="text" placeholder="Enter text" name="first_name"/>
+                                <label>Name:</label>
+                                <input class="form-control" type="text" placeholder="Enter text" name="name"/>
                            
                             </div>
 
+                           
+                            
                             <div class="form-group">
-                                <label>Last_Name:</label>
-                                <input class="form-control" type="text" placeholder="Enter text"  name="last_name">
+                                <label>Description :</label>
+                                <textarea class="form-control" rows="3" name="description"></textarea>
                             </div>
                             <div class="form-group">
-                                <label>Address:</label>
-                                <textarea class="form-control" rows="3" name="address"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label>City:</label>
-                                <label><input type="text" name="city"></label>
+                                <label>Image_Name</label>
+                                <label><input type="file" name="i"></label>
                                 </div>
                                 <div class="form-group">
                                 <label>Pincode:</label>

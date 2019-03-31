@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Create User')
+@section('title', 'Edit Event')
 
 @section('content')
 <div class="row">
@@ -12,69 +12,83 @@
     <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Create User
+                Edit User
             </div>
             <div class="panel-body">
                 <div class="row">
+            		@if ($errors->any())
+				      	<div class="alert alert-danger">
+				        	<ul>
+				            	@foreach ($errors->all() as $error)
+				              	<li>{{ $error }}</li>
+				            	@endforeach
+				        	</ul>
+				      	</div><br />
+				    @endif
                     <div class="col-lg-6">
-                        <form role="form" method="POST" action="{{ route('users.store') }}">
-                            @csrf
-                        	
+                        <form role="form" method="POST" action="{{ route('users.update', $user->id) }}">
+                        	@method('PATCH')
+        					@csrf
         					<div class="form-group row">
         						<div class="form-group">
-                                <label>First_Name:</label>
-                                <input class="form-control" type="text" placeholder="Enter text" name="first_name"/>
+                                <label>Name:</label>
+                                <input class="form-control" type="text" placeholder="Enter text" name="name" value="{{ $event->name }}" />
                            
                             </div>
 
                             <div class="form-group">
-                                <label>Last_Name:</label>
-                                <input class="form-control" type="text" placeholder="Enter text"  name="last_name">
+                                <label>Location:</label>
+                                <input class="form-control" type="location" placeholder="Enter text"  name="last_name"value="{{ $event->location }}">
+                            </div>
+                            <div class="form-group">
+                                <label>Description:</label>
+                                <textarea class="form-control" rows="3"type="text" name="Description"value="{{ $event->description}}"></textarea>
                             </div>
                             <div class="form-group">
                                 <label>Address:</label>
-                                <textarea class="form-control" rows="3" name="address"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label>City:</label>
-                                <label><input type="text" name="city"></label>
+                                <label><input type="text" name="address"value="{{ $event->address }}"></label>
                                 </div>
                                 <div class="form-group">
-                                <label>Pincode:</label>
-                                <label><input type="number" name="pincode"></label>
+                                <label>City:</label>
+                                <label><input type="text" name="city"value="{{ $event->city }}"></label>
                                 </div>
                                 <div class="form-group">
                                 <label>state:</label>
-                                <label><input type="text" name="state"></label>
+                                <label><input type="text" name="state"value="{{ $event->state }}"></label>
                                 </div> 
                                 <div class="form-group">
-                                <label>email:</label>
-                                <label><input type="email" name="email"></label>
+                                <label>Contact:</label>
+                                <label><input type="number" name="contact"value="{{ $event->contact }}"></label>
                                 </div>  
                             <div class="form-group">
                             	<div class="form-group">
-                                <label>Password:</label>
-                                <label><input type="Password" name="password"></label>
+                                <label>Price:</label>
+                                <label><input type="number" name="price"value="{{ $user->password }}"></label>
                                 </div>
+                            <div class="form-group">
+                                <div class="form-group">
+                                <label>Image upload:</label>
+                                <label><input type="text" name="image upload"value="{{ $user->password }}"></label>
+                                </div>    
+                            </div>
                                 
                             </div>
                             <div class="form-group">
                                 <label>Gender: </label>
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" value="m" name="gender">Male
+                                        <input type="radio" value="m" name="gender" {{ $user->gender=="m"?'checked':'' }}>Male
                                     </label>
                                 </div>
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" value="f" name="gender">Female
+                                        <input type="radio" value="f" name="gender" {{ $user->gender=="f"?'checked':'' }}>Female
                                     </label>
                                 </div>
                                
                             </div>
-
-                            <button type="submit" class="btn btn-default">Save User</button>
-                            <button type="reset" class="btn btn-default">Reset</button>
+                            <button type="submit" class="btn btn-default">Submit Button</button>
+                            <button type="reset" class="btn btn-default">Reset Button</button>
                         </form>
                     </div>
                     <!-- /.col-lg-6 (nested) -->

@@ -36,21 +36,21 @@
 			<div class="col-md-3 col-sm-6 p-1">
 				<div class="portfolio-item2">
 					<a class="" href="#popup2" >
-						<img src="images/g(2).jpg" class="img-fluid w3layouts agileits" alt="Wedding">
+						<img src="images/image2.jpg" class="img-fluid w3layouts agileits" alt="Wedding">
 					</a>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 p-1">
 				<div class="portfolio-item2">
 					<a class="" href="#popup3" >
-						<img src="images/g(3).jpg" class="img-fluid w3layouts agileits" alt="Wedding">
+						<img src="images/image3.jpg" class="img-fluid w3layouts agileits" alt="Wedding">
 					</a>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 p-1">
 				<div class="portfolio-item2">
 					<a class="" href="#popup4" >
-						<img src="images/g(4).jpg" class="img-fluid w3layouts agileits" alt="Wedding">
+						<img src="images/image4.jpg" class="img-fluid w3layouts agileits" alt="Wedding">
 					</a>
 				</div>
 			</div>
@@ -58,7 +58,7 @@
 			<div class="col-md-3 col-sm-6 p-1">
 				<div class="portfolio-item2">
 					<a class="" href="#popup5" >
-						<img src="images/g(5).jpg" class="img-fluid w3layouts agileits" alt="Wedding">
+						<img src="images/image5.jpg" class="img-fluid w3layouts agileits" alt="Wedding">
 					</a>
 				</div>
 			</div>
@@ -66,7 +66,7 @@
 			<div class="col-md-3 col-sm-6 p-1">
 				<div class="portfolio-item2">
 					<a class="" href="#popup6" >
-						<img src="images/g(6).jpg" class="img-fluid w3layouts agileits" alt="Wedding">
+						<img src="images/image6.jpg" class="img-fluid w3layouts agileits" alt="Wedding">
 					</a>
 				</div>
 			</div>
@@ -74,42 +74,42 @@
 			<div class="col-md-3 col-sm-6 p-1">
 				<div class="portfolio-item2">
 					<a class="" href="#popup7" >
-						<img src="images/g7.jpg" class="img-fluid w3layouts agileits" alt="Wedding">
+						<img src="images/image7.jpg" class="img-fluid w3layouts agileits" alt="Wedding">
 					</a>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 p-1">
 				<div class="portfolio-item2">
 					<a class="" href="#popup8" >
-						<img src="images/g(8).jpg" class="img-fluid w3layouts agileits" alt="Wedding">
+						<img src="images/image8.jpg" class="img-fluid w3layouts agileits" alt="Wedding">
 					</a>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 p-1">
 				<div class="portfolio-item2">
 					<a class="" href="#popup9" >
-						<img src="images/g1_old.jpg" class="img-fluid w3layouts agileits" alt="Wedding">
+						<img src="images/image9.jpg" class="img-fluid w3layouts agileits" alt="Wedding">
 					</a>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 p-1">
 				<div class="portfolio-item2">
-					<a class="" href="#popup2" >
-						<img src="{{ asset('images/g2_old.jpg') }}" class="img-fluid w3layouts agileits" alt="Wedding">
+					<a class="" href="#popup10" >
+						<img src="{{ asset('images/image10.jpg') }}" class="img-fluid w3layouts agileits" alt="Wedding">
 					</a>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 p-1">
 				<div class="portfolio-item2">
-					<a class="" href="#popup3" >
-						<img src="images/g_3.jpg" class="img-fluid w3layouts agileits" alt="Wedding">
+					<a class="" href="#popup11" >
+						<img src="images/image11.jpg" class="img-fluid w3layouts agileits" alt="Wedding">
 					</a>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 p-1">
 				<div class="portfolio-item2">
-					<a class="" href="#popup4" >
-						<img src="images/g4.jpg" class="img-fluid w3layouts agileits" alt="Wedding">
+					<a class="" href="#popup12" >
+						<img src="images/image12.jpg" class="img-fluid w3layouts agileits" alt="Wedding">
 					</a>
 				</div>
 			</div>
@@ -132,7 +132,7 @@
 <!-- popup2 -->
 <div id="popup2" class="popup-effect">
 	<div class="popup">
-		<img src="images/g2_old.jpg" alt="Popup Image" class="img-fluid" />
+		<img src="images/image2.jpg" alt="Popup Image" class="img-fluid" />
 		<a class="close" href="#gallery">&times;</a>
 	</div>
 </div>
@@ -140,7 +140,7 @@
 <!-- popup3 -->
 <div id="popup3" class="popup-effect">
 	<div class="popup">
-		<img src="images/g3.jpg" alt="Popup Image" class="img-fluid" />
+		<img src="images/image3.jpg" alt="Popup Image" class="img-fluid" />
 		<a class="close" href="#gallery">&times;</a>
 	</div>
 </div>
@@ -148,7 +148,7 @@
 <!-- popup4 -->
 <div id="popup4" class="popup-effect">
 	<div class="popup">
-		<img src="images/g4.jpg" alt="Popup Image" class="img-fluid" />
+		<img src="images/image4.jpg" alt="Popup Image" class="img-fluid" />
 		<a class="close" href="#gallery">&times;</a>
 	</div>
 </div>
@@ -156,7 +156,7 @@
 <!-- popup5 -->
 <div id="popup5" class="popup-effect">
 	<div class="popup">
-		<img src="images/g5.jpg" alt="Popup Image" class="img-fluid" />
+		<img src="images/image5.jpg" alt="Popup Image" class="img-fluid" />
 		<a class="close" href="#gallery">&times;</a>
 	</div>
 </div>
@@ -164,7 +164,7 @@
 <!-- popup6 -->
 <div id="popup6" class="popup-effect">
 	<div class="popup">
-		<img src="images/g6.jpg" alt="Popup Image" class="img-fluid" />
+		<img src="images/image6.jpg" alt="Popup Image" class="img-fluid" />
 		<a class="close" href="#gallery">&times;</a>
 	</div>
 </div>
@@ -172,7 +172,7 @@
 <!-- popup7 -->
 <div id="popup7" class="popup-effect">
 	<div class="popup">
-		<img src="images/g7.jpg" alt="Popup Image" class="img-fluid" />
+		<img src="images/image7.jpg" alt="Popup Image" class="img-fluid" />
 		<a class="close" href="#gallery">&times;</a>
 	</div>
 </div>
@@ -180,7 +180,7 @@
 <!-- popup8 -->
 <div id="popup8" class="popup-effect">
 	<div class="popup">
-		<img src="images/g8.jpg" alt="Popup Image" class="img-fluid" />
+		<img src="images/image8.jpg" alt="Popup Image" class="img-fluid" />
 		<a class="close" href="#gallery">&times;</a>
 	</div>
 </div>
@@ -188,9 +188,33 @@
 <!-- popup9 -->
 <div id="popup9" class="popup-effect">
 	<div class="popup">
-		<img src="images/g1_old.jpg" alt="Popup Image" class="img-fluid" />
+		<img src="images/image9.jpg" alt="Popup Image" class="img-fluid" />
 		<a class="close" href="#gallery">&times;</a>
 	</div>
 </div>
 <!-- //popup9 -->
+<!-- popup10 -->
+<div id="popup10" class="popup-effect">
+	<div class="popup">
+		<img src="images/image10.jpg" alt="Popup Image" class="img-fluid" />
+		<a class="close" href="#gallery">&times;</a>
+	</div>
+</div>
+<!-- //popup10 -->
+<!-- popup11 -->
+<div id="popup11" class="popup-effect">
+	<div class="popup">
+		<img src="images/image11.jpg" alt="Popup Image" class="img-fluid" />
+		<a class="close" href="#gallery">&times;</a>
+	</div>
+</div>
+<!-- //popup11 -->
+<!-- popup12 -->
+<div id="popup12" class="popup-effect">
+	<div class="popup">
+		<img src="images/image12.jpg" alt="Popup Image" class="img-fluid" />
+		<a class="close" href="#gallery">&times;</a>
+	</div>
+</div>
+<!-- //popup12 -->
 @endsection

@@ -13,23 +13,31 @@
                 <!-- /input-group -->
             </li>
             <li>
-                <a href="{{url('index')}}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                <a href="{{ url('admin') }}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
             </li>
             <li>
+                <a href="{{ url('admin/users') }}"><i class="fa fa-users fa-fw"></i> Users</a>
+            </li>
+            <li>
+                <a href="{{ url('admin/events') }}"><i class="fa fa-users fa-fw"></i> Events</a>
+            </li>
+            <li>
+                 <a href="{{ url('admin/category') }}"><i class="fa fa-users fa-fw"></i> Categories</a>
+            </li>
+            <!-- <li>
                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
                         <a href="{{ url('flot') }}">Flot Charts</a>
                     </li>
                     <li>
-                <a href="{{url('morris.')}}"><i class="fa fa-table fa-fw"></i> Tables</a>
+                <a href="{{url('morris')}}"><i class="fa fa-table fa-fw"></i> Tables</a>
         
                     </li>
                 </ul>
-                <!-- /.nav-second-level -->
             </li>
             <li>
-                <a href="{{ url('tables') }}"><i class="fa fa-table fa-fw"></i> Tables</a>
+                <a href="{{ url('admin/Tables') }}"><i class="fa fa-table fa-fw"></i> Tables</a>
             </li>
             <li>
                 <a href="{{url('forms')}}"><i class="fa fa-edit fa-fw"></i> Forms</a>
@@ -56,7 +64,6 @@
                         <a href="{{url('grid')}}">Grid</a>
                     </li>
                 </ul>
-                <!-- /.nav-second-level -->
             </li>
             <li>
                 <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
@@ -83,10 +90,8 @@
                                 <a href="#">Third Level Item</a>
                             </li>
                         </ul>
-                        <!-- /.nav-third-level -->
                     </li>
                 </ul>
-                <!-- /.nav-second-level -->
             </li>
             <li>
                 <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
@@ -98,8 +103,7 @@
                         <a href="{{url('login')}}">Login Page</a>
                     </li>
                 </ul>
-                <!-- /.nav-second-level -->
-            </li>
+            </li> -->
         </ul>
     </div>
     <!-- /.sidebar-collapse -->

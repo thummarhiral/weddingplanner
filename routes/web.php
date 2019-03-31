@@ -57,6 +57,18 @@ Route::group(['prefix' => 'admin','middleware' => 'is_admin'], function () {
 
     Route::resource('users', 'Admin\UserController');
 
+    Route::group(['prefix' => 'events'], function(){
+        Route::get('/', "Admin\EventController@index")->name('admin.events.index');
+        Route::get('create', "Admin\EventController@create")->name('admin.events.create');
+        Route::post('/', "Admin\EventController@store")->name('admin.events.store');
+        Route::get('/{event}', "Admin\EventController@show")->name('admin.events.show');
+        Route::get('{event}/edit', "Admin\EventController@edit")->name('admin.events.edit');
+        Route::put('/{event}', "Admin\EventController@update")->name('admin.events.update');
+        Route::delete('/{event}', "Admin\EventController@destroy")->name('admin.events.destroy');   
+    });
+    
+    Route::resource('category', 'Admin\CategoryController');
+
 	Route::get('flot', function () {
 	    return view('pages.flot');
 	});

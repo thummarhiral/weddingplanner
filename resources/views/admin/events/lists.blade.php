@@ -2,13 +2,13 @@
 
 @section('content')
 <div class="row">
-	<a href="{{ url('admin/users/create') }}">Add User</a>
+	<a href="{{ url('admin/event/create') }}">Add Event</a>
 			</div>	        
 <div class="row">
 	<div class="col-lg-12" style="margin-top: 15px;">
 	    <div class="panel panel-default">
 	        <div class="panel-heading">
-	            User Lists
+	            Event Lists
 	        </div>
 	        <!-- /.panel-heading -->
 	        <div class="panel-body">
@@ -22,36 +22,46 @@
 	                    <thead>
 	                        <tr>
 	                            <th>#</th>
-	                            <th>First Name</th>
-	                            <th>Last Name</th>
+	                            <th>Name</th>
+	                            <th>Location</th>
+	                            <th>Description</th>
 	                            <th>Address</th>
-	                            <th>Email</th>
-	                            <th>Pincode</th>
+	                            <th>City</th>
+	                            <th>State</th>
+	                            <th>Contact</th>
+	                            <th>Price</th>
+	                            <th>Image Upload</th>
 	                            <th>Status</th>
 	                            <th>Actions</th>
 	                        </tr>
 	                    </thead>
 	                    <tbody>
-	                    	@forelse ($users as $user)
-	                    		<tr>
-		                            <td>{{ $user->id }}</td>
-		                            <td>{{ $user->first_name }}</td>
-		                            <td>{{ $user->last_name }}</td>
-		                            <td>{{ $user->address }}</td>
-		                            <td>{{ $user->email  }}</td> 
-		                            <td>{{ $user->pincode }}</td>
-		                            <td>{{ $user->status=="1"?'Active':'Inactive' }}</td>
-		                            <td><a href="{{ url('admin/users/'.$user->id.'/edit') }}">Edit</a></td>
-		                            <td><form action="{{ url('admin/users/'.$user->id.'') }}" method="post">
+	                    	@forelse ($events as $event)
+	                    		 <tr>
+		                            <td>{{ $event->id }}</td>
+		                            <td>{{ $event->name }}</td>
+		                            <td>{{ $event->location }}</td>
+		                            <td>{{ $event->description }}</td>
+		                            <td>{{ $event->address  }}</td> 
+		                            <td>{{ $event->city}}</td>
+		                            <td>{{ $event->state}}</td>
+		                            <td>{{ $event->contact}}</td>
+		                            <td>{{ $event->price}}</td>
+		                            <td>{{ $event->image upload}}</td>
+		                            
+
+		                            <td>{{ $event->status=="1"?'Active':'Inactive' }}</td>
+		                            <td><a href="{{ url('admin/events/'.$event->id.'/edit') }}">Edit</a></td>
+		                            <td><form action="{{ url('admin/events/'.$event->id.'') }}" method="post">
           									@csrf
 	                                        @method('DELETE')
 	                                        <button class="btn btn-danger" type="submit">Delete</button>
 	                                    </form>
                                     </td>
-                        		</tr>
+                        		</tr> -->
 							@empty
 							    <tr class="text-danger">
-		                            <td colspan="4">No User Found!</td>
+		                            <td colspan="4">No Events Found!</td>
 		                        </tr>
 							@endforelse
 	                        
