@@ -2,13 +2,13 @@
 
 @section('content')
 <div class="row">
-	<a href="{{ url('admin/users/create') }}">Add User</a>
-			</div>	        
+	<a href="{{ url('admin/category/create') }}">Add Category</a>
+</div>	        
 <div class="row">
 	<div class="col-lg-12" style="margin-top: 15px;">
 	    <div class="panel panel-default">
 	        <div class="panel-heading">
-	            User Lists
+	            Category Lists
 	        </div>
 	        <!-- /.panel-heading -->
 	        <div class="panel-body">
@@ -24,7 +24,7 @@
 	                            <th>#</th>
 	                            <th>Name</th>
 	                            <th>Description</th>
-	                            <th>Image_Name</th>
+	                            <th>Image</th>
 	                            <th>Status</th>
 	                            <th>Actions</th>
 	                        </tr>
@@ -32,10 +32,10 @@
 	                    <tbody>
 	                    	@forelse ($categories as $category)
 	                    		<tr>
-		                            <td>{{ $categories->id }}</td>
-		                            <td>{{ $categories->name }}</td>
-		                            <td>{{ $categories->description }}</td>
-		                            <td>{{ $categories->image_name }}</td>
+		                            <td>{{ $category->id }}</td>
+		                            <td>{{ $category->name }}</td>
+		                            <td>{{ $category->description }}</td>
+		                            <td>{{ $category->image }}</td>
 		                            
 		                            <td>{{ $category->status=="1"?'Active':'Inactive' }}</td>
 		                            <td><a href="{{ url('admin/categories/'.$category->id.'/edit') }}">Edit</a></td>
@@ -48,7 +48,7 @@
                         		</tr>
 							@empty
 							    <tr class="text-danger">
-		                            <td colspan="4">No User Found!</td>
+		                            <td colspan="4">No Category Found!</td>
 		                        </tr>
 							@endforelse
 	                        

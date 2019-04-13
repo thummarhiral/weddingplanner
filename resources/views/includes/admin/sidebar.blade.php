@@ -22,8 +22,17 @@
                 <a href="{{ url('admin/events') }}"><i class="fa fa-users fa-fw"></i> Events</a>
             </li>
             <li>
-                 <a href="{{ url('admin/category') }}"><i class="fa fa-users fa-fw"></i> Categories</a>
+                <a href="#"><i class="fa fa-wrench fa-fw"></i> Category Lists<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                         <a href="{{ url('admin/category') }}"><i class="fa fa-users fa-fw"></i> Categories</a>
+                    </li>
+                    <li>
+                         <a href="{{ url('admin/sub-category') }}"><i class="fa fa-users fa-fw"></i> Sub Categories</a>
+                    </li>
+                </ul>
             </li>
+            
             <!-- <li>
                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">

@@ -17,10 +17,10 @@
             <div class="panel-body">
                 <div class="row">
                     <div class="col-lg-6">
-                        <form role="form" method="POST" action="{{ route('users.store') }}">
+                        <form role="form" method="POST" action="{{ route('category.store') }}">
                             @csrf
                         	
-        					<div class="form-group row">
+        					
         						<div class="form-group">
                                 <label>Name:</label>
                                 <input class="form-control" type="text" placeholder="Enter text" name="name"/>
@@ -34,44 +34,13 @@
                                 <textarea class="form-control" rows="3" name="description"></textarea>
                             </div>
                             <div class="form-group">
-                                <label>Image_Name</label>
-                                <label><input type="file" name="i"></label>
-                                </div>
-                                <div class="form-group">
-                                <label>Pincode:</label>
-                                <label><input type="number" name="pincode"></label>
-                                </div>
-                                <div class="form-group">
-                                <label>state:</label>
-                                <label><input type="text" name="state"></label>
-                                </div> 
-                                <div class="form-group">
-                                <label>email:</label>
-                                <label><input type="email" name="email"></label>
-                                </div>  
-                            <div class="form-group">
-                            	<div class="form-group">
-                                <label>Password:</label>
-                                <label><input type="Password" name="password"></label>
+                                <label>Image</label>
+                                <input type="file" name="i">
                                 </div>
                                 
-                            </div>
-                            <div class="form-group">
-                                <label>Gender: </label>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" value="m" name="gender">Male
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" value="f" name="gender">Female
-                                    </label>
-                                </div>
-                               
-                            </div>
+                        
 
-                            <button type="submit" class="btn btn-default">Save User</button>
+                            <button type="submit" class="btn btn-default">Save Categories</button>
                             <button type="reset" class="btn btn-default">Reset</button>
                         </form>
                     </div>

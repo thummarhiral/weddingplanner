@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Edit Event')
+@section('title', 'Edit Category')
 
 @section('content')
 <div class="row">
@@ -12,7 +12,7 @@
     <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Edit Event
+                Edit Category
             </div>
             <div class="panel-body">
                 <div class="row">
@@ -26,51 +26,26 @@
 				      	</div><br />
 				    @endif
                     <div class="col-lg-6">
-                        <form role="form" method="POST" action="{{ route('admin.events.update', $event->id) }}">
+                        <form role="form" method="POST" action="{{ route('category.update', $cetegory->id) }}">
                         	@method('PATCH')
         					@csrf
         					<div class="form-group row">
         						<div class="form-group">
                                 <label>Name:</label>
-                                <input class="form-control" type="text" placeholder="Enter text" name="name" value="{{ $event->name }}" />
+                                <input class="form-control" type="text" placeholder="Enter text" name="name" value="{{ $category->name }}" />
                            
                             </div>
 
+                        
                             <div class="form-group">
                                 <label>Description:</label>
-                                <textarea class="form-control" rows="3"type="text" name="Description"value="{{ $event->description}}"></textarea>
+                                <textarea class="form-control" rows="3"type="text" name="Description"value="{{ $Category->description}}"></textarea>
                             </div>
                             <div class="form-group">
-                                <label>Address:</label>
-                                <label><input type="text" name="address"value="{{ $event->address }}"></label>
+                                <label>Image</label>
+                                <input type="file" name="i">
                                 </div>
-                                <div class="form-group">
-                                <label>City:</label>
-                                <label><input type="text" name="city"value="{{ $event->city }}"></label>
-                                </div>
-                                <div class="form-group">
-                                <label>state:</label>
-                                <label><input type="text" name="state"value="{{ $event->state }}"></label>
-                                </div> 
-                                <div class="form-group">
-                                <label>Contact:</label>
-                                <label><input type="number" name="contact"value="{{ $event->contact }}"></label>
-                                </div>  
-                            <div class="form-group">
-                            	<div class="form-group">
-                                <label>Price:</label>
-                                <label><input type="number" name="price"value="{{ $event-> }}"></label>
-                                </div>
-                            <div class="form-group">
-                                <div class="form-group">
-                                <label>Image_upload:</label>
-                                <label><input type="file" name="image_uspload"value="{{ $event->image_upload }}"></label>
-                                </div>    
-                            </div>
-                                
-                            </div>
-                           
-                            <button type="submit" class="btn btn-default">Submit Button</button>
+                                <button type="submit" class="btn btn-default">Submit Button</button>
                             <button type="reset" class="btn btn-default">Reset Button</button>
                         </form>
                     </div>

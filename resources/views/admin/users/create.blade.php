@@ -20,7 +20,7 @@
                         <form role="form" method="POST" action="{{ route('users.store') }}">
                             @csrf
                         	
-        					<div class="form-group row">
+        					
         						<div class="form-group">
                                 <label>First_Name:</label>
                                 <input class="form-control" type="text" placeholder="Enter text" name="first_name"/>
@@ -37,24 +37,24 @@
                             </div>
                             <div class="form-group">
                                 <label>City:</label>
-                                <label><input type="text" name="city"></label>
+                                <input type="text" name="city">
                                 </div>
                                 <div class="form-group">
                                 <label>Pincode:</label>
-                                <label><input type="number" name="pincode"></label>
+                                <input type="number" name="pincode">
                                 </div>
                                 <div class="form-group">
                                 <label>state:</label>
-                                <label><input type="text" name="state"></label>
+                                <input type="text" name="state">
                                 </div> 
                                 <div class="form-group">
                                 <label>email:</label>
-                                <label><input type="email" name="email"></label>
+                                <input type="email" name="email">
                                 </div>  
                             <div class="form-group">
                             	<div class="form-group">
                                 <label>Password:</label>
-                                <label><input type="Password" name="password"></label>
+                                <input type="Password" name="password">
                                 </div>
                                 
                             </div>
@@ -72,9 +72,10 @@
                                 </div>
                                
                             </div>
-
+                            <div class='form-group pull-right'>
                             <button type="submit" class="btn btn-default">Save User</button>
                             <button type="reset" class="btn btn-default">Reset</button>
+                        </div>dib
                         </form>
                     </div>
                     <!-- /.col-lg-6 (nested) -->

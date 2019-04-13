@@ -56,7 +56,7 @@ Route::group(['prefix' => 'admin','middleware' => 'is_admin'], function () {
     });
 
     Route::resource('users', 'Admin\UserController');
-
+    Route::resource('events','Admin/EventController');
     Route::group(['prefix' => 'events'], function(){
         Route::get('/', "Admin\EventController@index")->name('admin.events.index');
         Route::get('create', "Admin\EventController@create")->name('admin.events.create');
@@ -68,7 +68,15 @@ Route::group(['prefix' => 'admin','middleware' => 'is_admin'], function () {
     });
     
     Route::resource('category', 'Admin\CategoryController');
-
+     Route::group(['prefix' => 'Categories'], function(){
+        Route::get('/', "Admin\CategoryController@index")->name('category.index');
+        Route::get('create', "Admin\CategoryController@create")->name('category.create');
+        Route::post('/', "Admin\CategoryController@store")->name('category.store');
+        Route::get('/{category}', "Admin\CategoryController@show")->name('category.show');
+        Route::get('{category}/edit', "Admin\CategoryController@edit")->name('category.edit');
+        Route::put('/{category}', "Admin\CategoryController@update")->name('category.update');
+        Route::delete('/{category}', "Admin\CategoryController@destroy")->name('category.destroy'); 
+    });
 	Route::get('flot', function () {
 	    return view('pages.flot');
 	});

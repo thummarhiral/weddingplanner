@@ -1,20 +1,11 @@
-
-
 <?php
-
 namespace App;
 
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Model;
 
-class Category extends Authenticatable
+class Category extends Model
 {
-    use Notifiable;
-
-    const ADMIN_TYPE = 1;
-    const DEFAULT_TYPE = 0;
-
+    protected $table = "categories";
     /**
      * The attributes that are
       mass assignable.
@@ -22,7 +13,7 @@ class Category extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name','','description','image_name', 'email', 'password',
+        'id','name','description','status'
     ];
 
-    
+}

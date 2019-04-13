@@ -17,37 +17,31 @@
             <div class="panel-body">
                 <div class="row">
                     <div class="col-lg-6">
-                        <form role="form" method="POST" action="{{ route('users.store') }}">
+                        <form role="form" method="POST" action="{{ route('admin.events.store') }}">
                             @csrf
                         	
-        					<div class="form-group row">
-        						<div class="form-group">
+        					<div class="form-group">
                                 <label>Name:</label>
                                 <input class="form-control" type="text" placeholder="Enter text" name="name"/>
-                           
-                            </div>
-
-                            <div class="form-group">
-                                <label>Location:</label>
-                                <input class="form-control" type="text" placeholder="Enter text"  name="location">
                             </div>
                             <div class="form-group">
                                 <label>Description:</label>
                                 <textarea class="form-control" rows="3" name="description"></textarea>
                             </div>
+
                             <div class="form-group">
                                 <label>Address:</label>
-                                <label><input type="text" name="address"></label>
-                                </div>
-                                <div class="form-group">
+                                <input type="text" name="address" class="form-control" />
+                            </div>
+                            <div class="form-group">
                                 <label>City:</label>
-                                <label><input type="text" name="city"></label>
-                                </div>
-                                <div class="form-group">
+                                <input type="text" name="city" class="form-control" />
+                            </div>
+                            <div class="form-group">
                                 <label>state:</label>
                                 <label><input type="text" name="state"></label>
-                                </div> 
-                                <div class="form-group">
+                            </div> 
+                            <div class="form-group">
                                 <label>Contact:</label>
                                 <label><input type="number" name="contact"></label>
                                 </div> 
@@ -58,27 +52,13 @@
                             <div class="form-group">
                             	<div class="form-group">
                                 <label>Image Upload:</label>
-                                <label><input type="text" name="image upload"></label>
+                                <label><input type="file" name="image_upload"></label>
                                 </div>
-                                
                             </div>
-                            <!--div class="form-group">
-                                <label>Gender: </label>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" value="m" name="gender">Male
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" value="f" name="gender">Female
-                                    </label>
-                                </div>
-                               
+                            <div class="form-group pull-right">
+                                <button type="submit" class="btn btn-primary">Save Event</button>
+                                <button type="reset" class="btn btn-default">Reset</button>
                             </div>
-
-                            <button type="submit" class="btn btn-default">Save User</button>
-                            <button type="reset" class="btn btn-default">Reset</button>
                         </form>
                     </div>
                 </div>
